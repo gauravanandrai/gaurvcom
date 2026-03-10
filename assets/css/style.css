@@ -829,6 +829,15 @@ main {
   line-height: 1.6;
 }
 
+.timeline-text .contact-link {
+  color: #f5e6ca;
+  transition: color 0.25s ease;
+}
+
+.timeline-text .contact-link:hover {
+  color: #ffe4b5;
+}
+
 
 /**
  * skills 
