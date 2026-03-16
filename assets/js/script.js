@@ -76,57 +76,7 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 
 
-// EmailJS initialization
-// Replace these with your EmailJS credentials:
-// 1. Sign up at https://www.emailjs.com
-// 2. Create an Email Service (e.g., Gmail) and get your SERVICE_ID
-// 3. Create an Email Template with variables: {{from_name}}, {{reply_to}}, {{message}}
-// 4. Get your PUBLIC_KEY from Account > API Keys
-emailjs.init("YOUR_PUBLIC_KEY");
-
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
-
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
-    }
-
-  });
-}
-
-// handle form submission via EmailJS
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  const btn = formBtn.querySelector("span");
-  const originalText = btn.textContent;
-  btn.textContent = "Sending...";
-  formBtn.setAttribute("disabled", "");
-
-  emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
-    .then(function () {
-      btn.textContent = "Message Sent!";
-      form.reset();
-      setTimeout(function () {
-        btn.textContent = originalText;
-      }, 3000);
-    }, function (error) {
-      btn.textContent = "Failed. Try again.";
-      formBtn.removeAttribute("disabled");
-      setTimeout(function () {
-        btn.textContent = originalText;
-      }, 3000);
-    });
-});
+// contact form (disabled — form removed from page)
 
 
 

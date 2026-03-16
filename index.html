@@ -145,11 +145,11 @@
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
 
-          <li class="navbar-item">
+          <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
+          </li> -->
 
-          <li class="navbar-item">
+<li class="navbar-item">
             <button class="navbar-link" data-nav-link>Certifications</button>
           </li>
 
@@ -1001,34 +1001,43 @@
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.67397799516!2d-79.54286267498498!3d43.71812267682556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sus!4v1647608789441!5m2!1sen!2sus"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+          <h3 class="h3 form-title">Get in Touch</h3>
 
-          <form id="contact-form" class="form" data-form>
+          <ul class="contact-list">
 
-            <div class="input-wrapper">
-              <input type="text" name="from_name" class="form-input" placeholder="Full name" required data-form-input>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">LinkedIn</p>
+                <a href="https://www.linkedin.com/in/yourgaurav/" class="contact-link" target="_blank">linkedin.com/in/yourgaurav</a>
+              </div>
+            </li>
 
-              <input type="email" name="reply_to" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Twitter / X</p>
+                <a href="https://x.com/grvannd" class="contact-link" target="_blank">x.com/grvannd</a>
+              </div>
+            </li>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:gaurav@gaurv.com" class="contact-link">gaurav@gaurv.com</a>
+              </div>
+            </li>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
+          </ul>
 
         </section>
 
