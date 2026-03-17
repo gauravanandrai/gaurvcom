@@ -530,6 +530,12 @@ main {
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   z-index: 1;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(to bottom right, hsl(0, 0%, 35%), hsl(0, 0%, 20%));
 }
 
 .service-item::before {
@@ -539,6 +545,11 @@ main {
   background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
+  transition: background 0.25s ease;
+}
+
+.service-item:hover::before {
+  background: linear-gradient(to bottom right, hsl(240, 2%, 18%), hsl(240, 2%, 13%));
 }
 
 .service-icon-box { margin-bottom: 10px; }
